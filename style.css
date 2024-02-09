@@ -205,7 +205,7 @@ footer a:active {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .quoteContainer {
     padding: 1rem;
   }
