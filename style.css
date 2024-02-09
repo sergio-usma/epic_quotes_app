@@ -144,16 +144,37 @@ h1 {
   transform: scale(1.2);
 }
 
-.alert {
+.hidden {
+  display: none;
+}
+
+.show-alert {
+  position: absolute;
+  bottom: 20%;
   margin-top: 2rem;
   padding: 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #c0e7c0;
-  font-family: "Roboto", sans-serif;
   border-radius: 1rem;
   font-size: 1.6rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.error-alert {
+  position: absolute;
+  bottom: 20%;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c7acac;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: red;
   text-align: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
