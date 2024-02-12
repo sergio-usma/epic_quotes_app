@@ -4,18 +4,15 @@ const genQuote = document.querySelector('.genQuote');
 const authorQuote = document.querySelector('.authorQuote');
 const copyAlert = document.getElementById('alertCopy');
 
-const API_URL = 'https://api.quotable.io/random';
+const API_KEY = 'TcUeQDdUJ2zbSjk2WGceVw==f1oa4hpKBoJSzvpf';
+const API_URL = `https://api.api-ninjas.com/v1/quotes?X-Api-Key=${API_KEY}`;
 
-const fetchOptions = {
-  method: 'GET',
-  rejectUnauthorized: false,
-};
-
-fetch(API_URL, fetchOptions)
+fetch(API_URL)
   .then((response) => response.json())
+
   .then((data) => {
-    genQuote.textContent = `"${data.content}"`;
-    authorQuote.textContent = data.author;
+    genQuote.textContent = `"${data[0].quote}"`;
+    authorQuote.textContent = data[0].author;
   });
 
 function toClipboard(element) {

@@ -101,7 +101,7 @@ If you like this project, please give me a start, it is free!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Vijay Kumar](https://www.linkedin.com/in/vijay-kumar-44b4b1197/) for the project's inspiration and codebase. I also want to thank [FreeCodeCamp](https://www.freecodecamp.org/) for the [Quotable API](https://github.com/lukePeavey/quotable).
+I would like to thank [Vijay Kumar](https://www.linkedin.com/in/vijay-kumar-44b4b1197/) for the project's inspiration and codebase. I also want to thank api-ninjas.com for the [Quotes API](https://api-ninjas.com/api/quotes).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
