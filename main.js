@@ -36,10 +36,17 @@ function toClipboard(element) {
     });
 }
 
+function newQuote() {
+  fetch(API_URL)
+    .then((response) => response.json())
+    .then((data) => {
+      genQuote.textContent = `"${data[0].quote}"`;
+      authorQuote.textContent = data[0].author;
+    });
+}
+
 copyQuoteBtn.addEventListener('click', () => {
   toClipboard(`${genQuote.textContent} - ${authorQuote.textContent}`);
 });
-newQuoteBtn.addEventListener('click', () => {
-  // eslint-disable-next-line no-restricted-globals
-  location.reload();
-});
+
+newQuoteBtn.addEventListener('click', newQuote);
