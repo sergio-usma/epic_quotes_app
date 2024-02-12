@@ -6,7 +6,12 @@ const copyAlert = document.getElementById('alertCopy');
 
 const API_URL = 'https://api.quotable.io/random';
 
-fetch(API_URL)
+const fetchOptions = {
+  method: 'GET',
+  rejectUnauthorized: false,
+};
+
+fetch(API_URL, fetchOptions)
   .then((response) => response.json())
   .then((data) => {
     genQuote.textContent = `"${data.content}"`;
