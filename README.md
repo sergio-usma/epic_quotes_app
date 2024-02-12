@@ -26,7 +26,7 @@
 
 # 📖 Epic Quotes App <a name="about-project"></a>
 
-**Epic Quotes App** is a micro-project based on JavaScript that allows the user to see a random quote. It also includes a  The project was developed using HTML5, CSS3, and JavaScript.
+**Epic Quotes App** is a micro-project based on JavaScript that allows the user to see a random quote. It also includes a copy to clipboard button and a new quote button integrated in the UI. The project was developed using HTML5, CSS3, and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
